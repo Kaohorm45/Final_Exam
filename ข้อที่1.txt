@@ -1,0 +1,20 @@
+static void Main()
+        {
+            double[,] arr;
+            arr = ReadArray2(2, 4);
+        }
+        static double[,] ReadArray2(int row , int col)
+        {
+            double[,] score = new double[4, 2];
+            for (int i=0; i < score.GetLength(0); i++)
+            {
+                Console.WriteLine("{0}",i+1);
+                for(int j = 0; j < score.GetLength(1); j++)
+                {
+                    Console.WriteLine("{0}",j+1);
+                    score[i, j] = double.Parse(Console.ReadLine());
+                }
+                Console.WriteLine();
+            }
+            return score;
+        }
