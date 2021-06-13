@@ -1,0 +1,14 @@
+double sum, Ans ;
+            double num_1 = double.Parse(Console.ReadLine());
+            double num_2 = double.Parse(Console.ReadLine());
+            
+            string text = Console.ReadLine();
+            Console.WriteLine("input : "+text);
+            string FindMax;
+            Console.WriteLine(Math.Max(num_1,num_2));
+            string FindMin;
+            Console.WriteLine(Math.Min(num_1,num_2));
+            string FindMean;
+            sum = num_2 + num_1;
+            Ans = sum / 2;
+             Console.WriteLine(Ans);
