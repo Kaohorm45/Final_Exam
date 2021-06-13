@@ -1,0 +1,53 @@
+static void Main()
+        {
+            string[] DrawerArray;
+            int Size = 0;
+            SetupArray();
+            InsertIteam();
+            void SetupArray()
+            {
+                bool isSizeValid = false;
+
+                while (isSizeValid = false)
+                {
+                    Size = int.Parse(Console.ReadLine());
+                    if (Size > 0)
+                    {
+                        isSizeValid = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("please input a valid size.");
+                    }
+                }
+                DrawerArray = new string[Size];
+                for (int i = 0; i < DrawerArray.Length; i++)
+                {
+                    DrawerArray[i] = "Empty";
+                }
+            }
+
+            
+            void InsertIteam()
+            {
+                int Num_Item = int.Parse(Console.ReadLine());
+                if (Num_Item != -1)
+                {
+                    string item = Console.ReadLine();
+                    string Type_Item = Console.ReadLine();
+
+                    DrawerArray[Num_Item - 1] = item;
+                    for (int i = 0; i < DrawerArray.Length; i++)
+                    {
+                        Console.WriteLine(DrawerArray[i]);
+                    }
+                    InsertIteam();
+                }
+                else
+                {
+                    Console.WriteLine("End");
+                }
+                
+            }
+         
+        }
