@@ -1,0 +1,25 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("Please input a number from 0-3 to choose the folloeing menu : ");
+            Console.WriteLine("[0] Show all recent files ");
+            Console.WriteLine("[1] Open new file ");
+            Console.WriteLine("[2] Open recent file ");
+            Console.WriteLine("[3] Exit");
+            int num_file = int.Parse(Console.ReadLine());
+            string file_name = Console.ReadLine();
+           if (num_file == 1)
+            {
+                Console.WriteLine(file_name);
+            }
+           else if(num_file == 2)
+            {
+                Console.WriteLine(file_name);
+            }
+           else if (num_file == 3)
+            {
+                Console.WriteLine("Exit");
+            }
+           else
+            {
+                Console.WriteLine("Invalid menu number" );
+            }
